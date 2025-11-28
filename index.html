@@ -1,0 +1,144 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wanderly — Travel-page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#">WANDERLY</a>
+
+      <!-- CSS-only hamburger: hidden checkbox toggles menu -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger"></span>
+      </label>
+
+      <ul class="nav-list" >
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero" role="region" aria-label="Hero">
+      <div class="hero-overlay container">
+        <h1 class="hero-title">Explore the world — one trip at a time</h1>
+        <p class="hero-sub">Plan. Book. Wander. Discover curated travel experiences for every kind of explorer.</p>
+        <a class="btn-primary" href="#destinations">Discover Destinations</a>
+      </div>
+      <img src="../Images/image1.jpg"
+        alt="Sunset over ocean with mountains" class="hero-img" />
+    </section>
+
+    <!-- Features / About -->
+    <section id="features" class="features container" aria-label="Features and About">
+      <header class="section-head">
+        <h2>About Wanderly</h2>
+        <p><b>A smart travel app designed to inspire and help you book unforgettable trips.</b></p>
+      </header>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>Curated Trips</h3>
+          <p>Hand-picked destinations and itineraries to match your travel style.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Real-time Deals</h3>
+          <p>Get instant access to exclusive offers and last-minute savings.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Personal Planner</h3>
+          <p>Create personalized itineraries and share them with friends.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Destinations -->
+    <section id="destinations" class="destinations container" aria-label="Popular Destinations">
+      <header class="section-head">
+        <h2>Popular Destinations</h2>
+        <p><b>A few of our favorites — perfect for your next getaway.</b></p>
+      </header>
+
+      <div class="dest-grid">
+        <article class="dest-card">
+          <img src="../Images/image2.jpg" alt="City skyline with river" class="dest-img">
+          <div class="dest-body">
+            <h3>Venice Escape</h3>
+            <p>Glide through the canals and discover historic architecture, cozy cafes and art-filled alleys.</p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="../Images/image3.jpg" alt="Mountain lake with pine trees" class="dest-img">
+          <div class="dest-body">
+            <h3>Alpine Retreat</h3>
+            <p>Hike scenic trails, relax in mountain lodges and breathe crisp alpine air.</p>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="../Images/image4.jpg" alt="Tropical beach with palm trees" class="dest-img">
+          <div class="dest-body">
+            <h3>Tropical Bliss</h3>
+            <p>White sand beaches, vibrant coral reefs and laidback island vibes.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact / Signup -->
+    <section id="contact" class="contact container" aria-label="Contact">
+      <header class="section-head">
+        <h2>Get In Touch</h2>
+        <p><b>Sign up for updates or send us a message — we'd love to hear from you.</b></p>
+      </header>
+
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required minlength="2">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your travel plans..."
+            required></textarea>
+        </div>
+
+        <div class="form-row">
+          <button class="btn-primary" type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2025</span> Wanderly. All rights reserved.</p>
+      
+    </div>
+  </footer>
+</body>
+
+</html>
